@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "HR-Portal",
-    "slug": "HR-Portal",
+    "name": "racoon",
+    "slug": "racoon",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/racoon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/racoon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#e1e0dc"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,12 +19,26 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/racoon.png",
+        "backgroundColor": "#e1e0dc"
+      },
+      "package": "com.yshop674.racoon"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/racoon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d99df149-5482-4466-bcac-20168a64cd3b"
+      }
+    },
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+        }
+      ]
+    ]
   }
 }

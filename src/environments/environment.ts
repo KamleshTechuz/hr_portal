@@ -1,0 +1,1 @@
+export const environment = {apiUrl: 'http://3.135.224.162:4200/api/'};
