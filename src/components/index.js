@@ -1,6 +1,8 @@
 import CustomSearchBar from "./CustomSearchBar";
 import CustomTable from "./CustomTable";
+import Scorer from "./Scorer";
+import CustomAddModal from "./CustomAddModal";
 
 export {
-    CustomSearchBar, CustomTable
+    CustomSearchBar, CustomTable, Scorer, CustomAddModal
 }

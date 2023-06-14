@@ -13,6 +13,8 @@ const CustomSearchBar = () => {
               placeholder="Search"
               onChangeText={onChangeSearch}
               value={searchQuery}
+            //   style={{backgroundColor: 'rgba(0,0,55,0.08)'}}
+              style={styles.search}
           />
       </View>
   )
@@ -20,4 +22,8 @@ const CustomSearchBar = () => {
 
 export default CustomSearchBar;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    search: {
+        backgroundColor: 'white', borderRadius: 5
+    }
+});

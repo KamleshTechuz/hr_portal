@@ -1,19 +1,19 @@
 import { StyleSheet, Text, View } from 'react-native'
 import * as React from 'react'
 
-import { DataTable } from 'react-native-paper';
+import { Card, DataTable } from 'react-native-paper';
 import CustomTablesHeader from './tables/CustomTablesHeader';
 import CustomTableRows from './tables/CustomTableRows';
 
 const optionsPerPage = [2, 3, 4];
-const headers = ['Id', 'Name', 'Status', 'Action']
+const headers = ['Id', 'Name', 'Status']
 
 const rows = [
-    { id: 1, name: 'React', status: 'Avtive' },
-    { id: 2, name: 'React', status: 'Avtive' },
-    { id: 3, name: 'React', status: 'Avtive' },
-    { id: 4, name: 'React', status: 'Avtive' },
-    { id: 5, name: 'React', status: 'Avtive' },
+    { id: 1, name: 'React', status: 'Active' },
+    { id: 2, name: 'React', status: 'Active' },
+    { id: 3, name: 'React', status: 'Active' },
+    { id: 4, name: 'React', status: 'Active' },
+    { id: 5, name: 'React', status: 'Active' },
 ]
 
 const CustomTable = () => {
@@ -26,7 +26,7 @@ const CustomTable = () => {
     }, [itemsPerPage]);
 
   return (
-    <View>
+    <Card style={{margin: 15, backgroundColor: 'white', borderRadius: 5}}>
     <DataTable>
 
         <CustomTablesHeader data={headers} />
@@ -45,7 +45,7 @@ const CustomTable = () => {
         optionsLabel={'Rows per page'}
       />
     </DataTable>
-    </View>
+    </Card>
   )
 }
 
