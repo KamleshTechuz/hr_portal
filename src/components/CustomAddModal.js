@@ -1,12 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Button, Modal, Portal, TextInput } from 'react-native-paper'
+import { Button, Modal, Portal, TextInput, Title } from 'react-native-paper'
 
 const CustomAddModal = ({title, visible, onDismiss, value, onChangeText, onSave, update = false}) => {
   return (
     <Portal>
         <Modal visible={visible} onDismiss={onDismiss} contentContainerStyle={styles.containerStyle}>
-            <Text>{update ? `Edit ${title.toLowerCase()} name here to update...` : `Type ${title.toLowerCase()} name here to add...`} </Text>
+            <Title>{update ? `Edit ${title.toLowerCase()} name here to update...` : `Type ${title.toLowerCase()} name here to add...`} </Title>
             <TextInput style={styles.inputText} mode='outlined' label={`${title} Name`} value={value} onChangeText={onChangeText}
                 underlineColor='transparent' activeOutlineColor={styles.inputTextActive.color}
             />
